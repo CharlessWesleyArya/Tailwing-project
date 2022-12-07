@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css":"tailwindcss build src/styles.css -o public/styles.css"
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
     "url": "https://github.com/CharlessWesleyArya/Tailwing-project/issues"
   },
   "homepage": "https://github.com/CharlessWesleyArya/Tailwing-project#readme",
-  "dependencies": {
+  "devDependencies": {
     "tailwindcss": "^3.2.4"
   }
 }
